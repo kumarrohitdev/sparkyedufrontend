@@ -20,7 +20,7 @@ const IsAuthenticatedProvider = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        let response = await axios.get("http://localhost:3000/api/v1/auth", {
+        let response = await axios.get("http://localhost:8000/api/v1/auth", {
           withCredentials: true,
         });
         let auth = response.data.message;

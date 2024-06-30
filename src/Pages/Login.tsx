@@ -21,7 +21,7 @@ const LoginForm: React.FC = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/v1/login",
+        "http://localhost:8000/api/v1/login",
         {
           username,
           password,

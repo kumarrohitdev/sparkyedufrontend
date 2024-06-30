@@ -17,7 +17,7 @@ export default function Card() {
     const fetchBlog = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3000/api/v1/blogdata",
+          "http://localhost:8000/api/v1/blogdata",
           {
             withCredentials: true,
           }

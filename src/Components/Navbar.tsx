@@ -48,7 +48,7 @@ function ResponsiveAppBar() {
 
   const logout = async () => {
     try {
-      await axios.get("http://localhost:3000/api/v1/logout", {
+      await axios.get("http://localhost:8000/api/v1/logout", {
         withCredentials: true,
       });
       setIsAuth(false); // Update authentication status after logout
@@ -62,7 +62,7 @@ function ResponsiveAppBar() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/api/v1/auth", {
+        const response = await axios.get("http://localhost:/api/v1/auth", {
           withCredentials: true,
         });
         const auth = response.data.message;

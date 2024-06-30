@@ -18,7 +18,7 @@ export default function Userform({ isedit }: { isedit: boolean }) {
     const fetchProfile = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3000/api/v1/profile",
+          "http://localhost:8000/api/v1/profile",
           {
             withCredentials: true,
           }
@@ -38,7 +38,7 @@ export default function Userform({ isedit }: { isedit: boolean }) {
     e.preventDefault();
     try {
       await axios.post(
-        "http://localhost:3000/api/v1/update",
+        "http://localhost:8000/api/v1/update",
         {
           username: username,
           lastName: lastName,
